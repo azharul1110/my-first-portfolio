@@ -155,3 +155,46 @@ ul li a{
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+/* gallary section */
+
+.gallary-section{
+    text-align: center;
+    margin-top:100px ;
+}
+.gallary-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    gap: 24px;
+    grid-auto-rows: 250px;
+    grid-template-areas:
+    "one two three"
+    "four two six"
+    "four five six"
+    
+}
+.gallary-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-1{
+   grid-area: one; 
+}
+.box-2{
+  grid-area: two;
+}
+.box-3{
+ grid-area: three;
+}
+.box-4{
+ grid-area: four;
+}
+.box-5{
+ grid-area: five;
+}
+.box-6{
+ grid-area: six;
+}
